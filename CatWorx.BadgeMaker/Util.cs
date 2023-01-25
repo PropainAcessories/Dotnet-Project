@@ -43,12 +43,12 @@ namespace CatWorx.BadgeMaker
       // Layout variables
       int BADGE_WIDTH = 669;
       int BADGE_HEIGHT = 1044;
-      //Badge Photo
+      //Badge Photo Coordinates
       int PHOTO_LEFT_X = 184;
       int PHOTO_TOP_Y = 215;
       int PHOTO_RIGHT_X = 486;
       int PHOTO_BOTTOM_Y = 517;
-      //Badge Text
+      //Badge Text Coordinates (all centered on x axis).
       int COMPANY_NAME_Y = 150;
       int EMPLOYEE_NAME_Y = 600;
       int EMPLOYEE_ID_Y = 730;
@@ -63,7 +63,7 @@ namespace CatWorx.BadgeMaker
           SKBitmap badge = new SKBitmap(BADGE_WIDTH, BADGE_HEIGHT);
           SKCanvas canvas = new SKCanvas(badge);
 
-          // Company name
+          // Company name and image
           canvas.DrawImage(background, new SKRect(0, 0, BADGE_WIDTH, BADGE_HEIGHT));
           canvas.DrawImage(photo, new SKRect(PHOTO_LEFT_X, PHOTO_TOP_Y, PHOTO_RIGHT_X, PHOTO_BOTTOM_Y));
 
@@ -75,6 +75,8 @@ namespace CatWorx.BadgeMaker
           paint.TextAlign = SKTextAlign.Center;
           paint.Typeface = SKTypeface.FromFamilyName("Arial");
 
+
+          // Puts text on the center of the badge
           canvas.DrawText(employees[i].GetCompanyName(), BADGE_WIDTH / 2f, COMPANY_NAME_Y, paint);
           canvas.DrawText(employees[i].GetFullName(), BADGE_WIDTH / 2f, EMPLOYEE_NAME_Y, paint);
           paint.Typeface = SKTypeface.FromFamilyName("Courier New");

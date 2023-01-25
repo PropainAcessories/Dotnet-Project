@@ -49,3 +49,4 @@ E:\GT-Coding-BootCamp\Dotnet-Project\CatWorx.BadgeMaker\bin\Debug\net6.0\runtime
 E:\GT-Coding-BootCamp\Dotnet-Project\CatWorx.BadgeMaker\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
 E:\GT-Coding-BootCamp\Dotnet-Project\CatWorx.BadgeMaker\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll
 E:\GT-Coding-BootCamp\Dotnet-Project\CatWorx.BadgeMaker\obj\Debug\net6.0\CatWorx.BadgeMaker.csproj.CopyComplete
+E:\GT-Coding-BootCamp\Dotnet-Project\CatWorx.BadgeMaker\bin\Debug\net6.0\Newtonsoft.Json.dll
